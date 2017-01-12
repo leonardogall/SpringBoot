@@ -42,7 +42,7 @@ public class NfaResource {
 		nfaRes.put(id, nfas.get(id));
 
 		if(nfas.get(id) == null){
-			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+			return new ResponseEntity<>(HttpStatus.OK);
 		}else{
 			return new ResponseEntity<List<Nfa>>(new ArrayList<Nfa>(nfaRes.values()), HttpStatus.OK);
 			//return new ResponseEntity<>(HttpStatus.OK);
