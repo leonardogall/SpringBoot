@@ -2,6 +2,7 @@ package WSSpringBoot.WSSpringBoot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.web.SpringBootServletInitializer;
 
 /**
  * Hello world!
@@ -9,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 
 @SpringBootApplication
-public class Main {
+public class Main extends SpringBootServletInitializer{
 	
 
     public static void main( String[] args ) throws Exception{
